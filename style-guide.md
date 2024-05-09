@@ -55,12 +55,14 @@ font-size: 3rem;
 font-family: "Fraunces", serif;
 color: #23303e;
 
-p {
-font-size: 1.12rem;
-font-family: "Barlow", serif;
-color: #818498;
-font-weight: 700;
-letter-spacing: 0.1rem;
-line-height: 1.8rem;
-width: 40ch;
+ p {
+  font-size: 1.12rem;
+  font-family: "Barlow", serif;
+  color: #818498;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  width: 40ch;
 }
+
+

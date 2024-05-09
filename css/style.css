@@ -1,6 +1,12 @@
+@import url(./global.css);
 @import url(./reset.css);
 @import url(./header.css);
-@import url(transform.css);
+@import url(./transform.css);
+@import url(./stand.css);
+@import url(./designer-photograpy.css);
+@import url(./clients.css);
+@import url(./imgs.css);
+@import url(./footer.css);
 
 body {
   overflow-x: hidden;

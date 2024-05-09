@@ -1,0 +1,55 @@
+footer {
+  align-content: center;
+  text-align: center;
+
+  height: 25rem;
+
+  background-color: #8ed0c4;
+}
+footer img {
+  width: 13rem;
+  margin: 0 0 3rem 0;
+  cursor: pointer;
+}
+
+footer img .logo-footer path {
+  fill: #458c7e;
+}
+
+footer .links {
+  display: flex;
+  width: min-content;
+  margin: 0 auto 4rem auto;
+  gap: 4rem;
+}
+
+footer .links a {
+  text-decoration: none;
+  font-family: "Barlow", serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #458c7e;
+  transition: 0.3s ease;
+}
+
+footer .links a:hover {
+  color: white;
+}
+
+.social-media ul {
+  width: min-content;
+  display: flex;
+}
+
+.social-media ul {
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.social-media ul li a .icons path {
+  transition: 0.3s ease;
+}
+
+.social-media ul li a .icons:hover path {
+  fill: white;
+}

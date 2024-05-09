@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #23303e;
+  max-width: 15px;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  width: 135px;
+  height: 10px;
+  position: absolute;
+  display: block;
+
+  transition: 0.7s ease;
+}
+
+.link:hover::after {
+  background-color: transparent;
+}
+
+.descriptions {
+  font-size: 1.12rem;
+  font-family: "Barlow", serif;
+  color: #818498;
+  font-weight: 900;
+  letter-spacing: 0.09rem;
+  line-height: 1.7rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+
+
+.img-container {
+  width: 50%;
+  height: 550px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description-container {
+  width: 50%;
+  background-color: #ffffff;
+
+  align-content: center;
+}
+
+.mini-container-items {
+  width: 60%;
+  margin: auto auto;
+}
+
