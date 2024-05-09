@@ -1,0 +1,85 @@
+header {
+  display: grid;
+  position: relative;
+
+  height: 100vh;
+
+  background: url(../images/desktop/image-header.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+
+  height: 40px;
+  width: 95vw;
+
+  margin: 30px auto;
+
+  justify-content: space-between;
+
+  font-family: "Barlow", serif;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2.5rem;
+  max-width: 100%;
+
+  color: white;
+
+  align-items: center;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+nav ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+nav ul li:nth-last-child(1) {
+  background-color: white;
+  color: black;
+
+  padding: 15px 30px;
+  border-radius: 20px;
+
+  font-family: "Fraunces", serif;
+  transition: 0.5s ease;
+}
+
+nav ul li:nth-last-child(1):hover {
+  background-color: #7ad0fb;
+  color: white;
+
+  border-radius: 20px;
+}
+
+header h1 {
+  color: white;
+
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+
+  position: absolute;
+
+  text-align: center;
+
+  top: 130px;
+  width: 100vw;
+  height: 70px;
+}
+
+.arrow-down {
+  margin: 0 auto;
+}
+
+
