@@ -76,6 +76,7 @@ nav .menu-desktop li:nth-last-child(1) {
   border-radius: 20px;
 
   font-family: "Fraunces", serif;
+  cursor: pointer;
 }
 
 nav .menu-mobile li:nth-last-child(1) {
@@ -99,7 +100,7 @@ nav .menu-mobile li:nth-last-child(1):hover a {
   color: white;
 }
 
-nav .menu-desktop li:nth-last-child(1):hover {
+nav .menu-desktop li:nth-last-child(1):hover{
   background-color: #7ad0fb;
   color: white;
 
