@@ -34,10 +34,28 @@
     />
   </head>
   <body>
-    <header>
+    <header class="desktop">
       <nav>
         <img src="./images/logo.svg" alt="sunnyside" />
-        <ul>
+        <ul class="menu-desktop">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <!-- Mobile  -->
+
+        <svg
+          class="menu"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+
+        <ul class="menu-mobile">
           <li><a href="#About">About</a></li>
           <li><a href="#Services">Services</a></li>
           <li><a href="#Projects">Projects</a></li>
@@ -65,7 +83,7 @@
       </div>
     </article>
 
-    <article class="container" aria-label="tranform">
+    <article class="container-2" aria-label="tranform">
       <div class="img-container">
         <img src="./images/desktop/image-stand-out.jpg" alt="" />
       </div>
@@ -82,7 +100,7 @@
       </div>
     </article>
 
-    <article class="container" id="Services">
+    <article class="projects" id="Services">
       <div class="container-design">
         <h2 class="title">Graphic design</h2>
         <p>
@@ -134,6 +152,7 @@
       </div>
     </article>
 
+  
     <article class="imgs" id="Projects">
       <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
       <img src="./images/desktop/image-gallery-orange.jpg" alt="" />
@@ -142,7 +161,7 @@
     </article>
 
     <footer>
-      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <img class="logo" src="./images/logo-footer.svg" alt="logo" />
       <ul class="links">
         <li><a href="#About">About</a></li>
         <li><a href="#Services">Services</a></li>
@@ -216,13 +235,7 @@
           </li>
         </ul>
       </div>
-    </footer>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Joao Victor Souza</a>.
-    </div>
+    </footer> 
+    <script src="./js/modalMobile.js"></script>
   </body>
 </html>

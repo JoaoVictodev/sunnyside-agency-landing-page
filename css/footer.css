@@ -12,9 +12,7 @@ footer img {
   cursor: pointer;
 }
 
-footer img .logo-footer path {
-  fill: #458c7e;
-}
+
 
 footer .links {
   display: flex;

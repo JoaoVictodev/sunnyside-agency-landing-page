@@ -1,0 +1,19 @@
+.imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  padding-top: 30px;
+}
+
+.imgs img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .imgs {
+    grid-template-columns: 1fr 1fr;
+  }
+  .imgs img {
+    flex-wrap: wrap;
+  }
+}

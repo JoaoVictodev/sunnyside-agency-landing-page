@@ -8,6 +8,14 @@ header {
   background-size: cover;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
 nav img {
   cursor: pointer;
 }
@@ -38,11 +46,20 @@ nav ul {
   align-items: center;
 }
 
-nav ul li a {
+nav .menu-desktop li a {
   cursor: pointer;
   transition: 0.3s ease;
   text-decoration: none;
   color: white;
+
+  transition: 0.3s ease;
+}
+
+nav .menu-mobile li a {
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  color: hsl(210, 4%, 67%);
 
   transition: 0.3s ease;
 }
@@ -52,7 +69,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-nav ul li:nth-last-child(1) {
+nav .menu-desktop li:nth-last-child(1) {
   background-color: white;
 
   padding: 15px 30px;
@@ -61,18 +78,35 @@ nav ul li:nth-last-child(1) {
   font-family: "Fraunces", serif;
 }
 
-nav ul li:nth-last-child(1) a {
+nav .menu-mobile li:nth-last-child(1) {
+  background-color: hsl(51, 100%, 49%);
+  width: 70%;
+  margin: 0 auto;
+
+  padding: 15px 30px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+}
+
+nav .menu-desktop li:nth-last-child(1) a,
+nav .menu-mobile li:nth-last-child(1) a {
   color: black;
 }
 
-nav ul li:nth-last-child(1):hover {
+nav .menu-mobile li:nth-last-child(1):hover a {
+  color: white;
+}
+
+nav .menu-desktop li:nth-last-child(1):hover {
   background-color: #7ad0fb;
   color: white;
 
   border-radius: 20px;
 }
 
-nav ul li:nth-last-child(1):hover a {
+nav .menu-desktop li:nth-last-child(1):hover a {
   color: white;
 }
 
@@ -94,4 +128,74 @@ header h1 {
 
 .arrow-down {
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 90vw;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    text-align: center;
+    z-index: 100;
+    animation: modal 1.7s ease;
+  }
+
+  @keyframes modal {
+    0% {
+      opacity: 0;
+      transform: translate3d(300px, 0px, 0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0px, 0px, 0px);
+    }
+  }
+
+  .menu-mobile::before {
+    content: "";
+    display: inline-block;
+    top: -17px;
+    right: 0px;
+    border-left: 16px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 18px solid #fff;
+    position: absolute;
+  }
+
+  .menu-mobile li {
+    padding-bottom: 15px;
+  }
+
+  .menu {
+    fill: #fff;
+    display: block;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  nav img {
+    width: 150px;
+    height: 35px;
+  }
+
+  header h1{
+    font-size: 3rem;
+  }
 }

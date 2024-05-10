@@ -32,7 +32,7 @@
 }
 
 .clients-container p {
-  width: 40ch;
+  max-width: 40ch;
   padding-bottom: 3rem;
 }
 
@@ -44,4 +44,33 @@
   color: hsl(210, 4%, 67%);
   font-family: "Barlow", serif;
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .clients-main {
+    height: auto;
+    text-align: center;
+  }
+
+  .clients-main {
+    background-color: #fffbf8;
+    align-content: center;
+    text-align: center;
+  }
+
+  .container-clients {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .clients-container p {
+    margin: 0 auto;
+  }
+
+  .title-clients {
+    max-width: 15ch;
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
 }
